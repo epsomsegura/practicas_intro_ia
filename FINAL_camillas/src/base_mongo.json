@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5d08fada0704151d3541b031"},"enfermedad":"gripe","temp_min":{"$numberInt":"22"},"temp_max":{"$numberInt":"25"},"act0_status":"t","act1_status":"f","activo":"t"}
+{"_id":{"$oid":"5d091a390704151d3541b032"},"enfermedad":"fractura","temp_min":{"$numberInt":"22"},"temp_max":{"$numberInt":"28"},"act0_status":"f","act1_status":"f","activo":"f"}

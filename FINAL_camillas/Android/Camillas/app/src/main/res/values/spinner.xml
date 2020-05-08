@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sick_array">
+        <item>Respiratoria</item>
+        <item>Por Calor</item>
+        <item>Por Frio</item>
+        <item>Otra</item>
+    </string-array>
+</resources>

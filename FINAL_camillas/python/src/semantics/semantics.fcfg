@@ -1,0 +1,29 @@
+% start S
+
+
+
+
+
+#   Temperatura actual
+S[sem = <getTemp(?np,?vp)>] -> NP[SEM=?np] VP[SEM=?vp] | COMP NP[SEM=?np] VP[SEM=?vp]
+S[sem = <modtemp(?ac)>] -> V2[SEM=?ac] COMP2 | V2[SEM=?ac] ARTICULO COMP2 | V V2[SEM=?ac] ARTICULO COMP2
+
+
+COMP -> V[SEM=?v] ARTICULO
+
+NP[SEM=?temp] -> TEMP[SEM=?temp]
+VP[SEM=?time] -> PREPOSICION TIME[SEM=?time] | TIME[SEM=?time]
+
+ARTICULO -> "el" | "la" | "los" | "las"
+PREPOSICION -> "de"
+V -> "dame" | "necesito" | "quiero" | "requiero" | "Dame" | "Necesito" | "Quiero" | "Requiero" 
+
+V2[SEM=<up>] -> "subir" | "aumentar" | "sube"
+V2[SEM=<down>] -> "bajar" | "reducir" | "baja"
+
+TEMP[SEM=<temperatura>] -> "temperatura" | "clima" | "grados" | "valor" | "valores"
+TIME[SEM=<actual>] -> "hoy" | "actual" | "ahora" | "actuales"
+TIME[SEM=<min>] -> "minima" | "mínima" | "minimo" | "mínimo" | "mínimos" | "mínimas"
+TIME[SEM=<max>] -> "maxima" | "máxima" | "maximo" | "máximo" | "máximos" | "máximas"
+
+COMP2 -> "temperatura" | "clima"

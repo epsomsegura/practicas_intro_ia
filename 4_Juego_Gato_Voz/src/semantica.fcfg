@@ -1,0 +1,29 @@
+% start S
+#################################################################
+##       Gramática
+#################################################################
+S[SEM=<?vp(?np)>] -> VP[SEM=?vp] NP[SEM=?np]
+S[SEM=<jugar(?np)>] -> NP[SEM=?np]
+
+VP[SEM=?v] -> V[SEM=?v] PREPO
+V[SEM=<\x.jugar(x)>] -> "tirar" | "jugar" | "poner" 
+PREPO -> "en"
+
+NP[SEM=?num] -> ARTICULO SUSTANTIVO NUM[SEM=?num]
+NP[SEM=?num] -> PREPO ARTICULO NUM[SEM=?num]
+NP[SEM=?num] -> ARTICULO NUM[SEM=?num]
+ARTICULO -> "el" | "la"
+SUSTANTIVO -> "casilla" | "posición" | "número" | "espacio"
+
+
+NUM[SEM=<1>] -> "1" | "uno"
+NUM[SEM=<2>] -> "2" | "dos"
+NUM[SEM=<3>] -> "3" | "tres"
+NUM[SEM=<4>] -> "4" | "cuatro"
+NUM[SEM=<5>] -> "5" | "cinco"
+NUM[SEM=<6>] -> "6" | "seis"
+NUM[SEM=<7>] -> "7" | "siete"
+NUM[SEM=<8>] -> "8" | "ocho"
+NUM[SEM=<9>] -> "9" | "nueve"
+
+#################################################################
